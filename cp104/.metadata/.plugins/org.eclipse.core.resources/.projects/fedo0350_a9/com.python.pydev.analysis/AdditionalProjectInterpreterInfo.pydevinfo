@@ -1,0 +1,30 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_a9\com.python.pydev.analysis\v2_indexcache
+functions|1607311179191904900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\functions.py
+t01|1607311088474972200|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\t01.py
+t03|1607310810323748000|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\t03.py
+t02|1607311088490590900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\t02.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\functions.py
+2=functions
+4=t01
+6=t03
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\t03.py
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a9\src\t01.py
+-- END DICTIONARY
+-- START TREE 1
+7
+add|1|add_2d_list!1^15#5*18@
+amo|1|amount!3^11#1*35@
+fla|2|flatten!5^14#1*51@flatten_2d!1^48#5*18@
+lar|1|largest_even!1^33#5*18@
+mat|4|matrix1!3^18#1*35@matrix_nums!3^13#1*35@matrix!5^12#1*51@matrix2!3^20#1*35@
+num|1|nums_list!3^12#1*35@
+str|1|str_list!3^14#1*35@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

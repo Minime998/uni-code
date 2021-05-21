@@ -1,0 +1,51 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_l5\com.python.pydev.analysis\v2_indexcache
+t10|1603396854862161600|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t10.py
+functions|1603400547000592900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\functions.py
+t13|1603397501191975500|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t13.py
+t04|1603393384290824500|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t04.py
+t07|1603400952958700400|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t07.py
+t06|1603396854851190400|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t06.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\functions.py
+9=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t13.py
+8=t10
+2=functions
+7=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t10.py
+11=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t04.py
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t07.py
+10=t13
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l5\src\t06.py
+12=t04
+4=t07
+6=t06
+-- END DICTIONARY
+-- START TREE 1
+20
+clo|1|closest!1^20#5*18@
+emp|1|emp_id!3^12#1*35@
+get|1|get_pay!1^71#5*18@
+hou|2|hourly_rate!3^13#1*35@hours_worked!3^14#1*35@
+i_n|1|i_number!5^13#1*51@
+int|1|intensity!7^12#1*67@
+is_|1|is_divisible!1^48#5*18@
+j_n|1|j_number!5^14#1*51@
+loa|1|loan!1^121#5*18@
+min|2|MIN_YEARS!1^17#1*19@MIN_SALARY!1^18#1*19@
+n_n|1|n_number!5^12#1*51@
+net|1|net_payment!3^16#1*35@
+ove|2|OVERTIME!1^14#1*19@OVERTIME_RATE!1^15#1*19@
+qua|1|qualified!9^13#1*83@
+res|3|result!7^14#1*67@result!11^16#1*99@result!5^16#1*51@
+ric|1|richter!1^94#5*18@
+tar|1|target!11^12#1*99@
+tax|1|TAX_RATE!1^16#1*19@
+v1|1|v1!11^13#1*99@
+v2|1|v2!11^14#1*99@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

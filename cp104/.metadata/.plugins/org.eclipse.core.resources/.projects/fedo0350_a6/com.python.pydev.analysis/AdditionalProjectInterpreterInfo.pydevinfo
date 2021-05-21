@@ -1,0 +1,34 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_a6\com.python.pydev.analysis\v2_indexcache
+functions|1605477126859637800|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\functions.py
+t01|1605471709833694600|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t01.py
+t03|1605476619324302400|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t03.py
+t02|1605476619334276400|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t02.py
+t04|1605476634888307700|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t04.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t03.py
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t04.py
+8=t01
+10=functions
+6=t03
+2=t02
+4=t04
+9=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\functions.py
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t02.py
+7=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a6\src\t01.py
+-- END DICTIONARY
+-- START TREE 1
+6
+ent|4|entlist!1^13#1*19@entlist!3^13#1*35@entlist!5^13#1*51@entlist!7^13#1*67@
+fin|1|find_target!9^35#5*82@
+lar|2|largest_odd!9^54#5*82@lar_odd!5^14#1*51@
+rea|1|read_positive!9^15#5*82@
+rev|1|reverse_list!9^74#5*82@
+tar|2|target!1^14#1*19@target_loc!1^16#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

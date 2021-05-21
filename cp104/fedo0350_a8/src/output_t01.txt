@@ -1,0 +1,2 @@
+List of nums:27 10 7 
+Total of nums:44

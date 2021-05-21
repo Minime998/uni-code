@@ -1,0 +1,37 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_a1\com.python.pydev.analysis\v2_indexcache
+t01|1601147794480645700|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t01.py
+t03|1601148538980347300|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t03.py
+t02|1601148337753782500|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t02.py
+t05|1601150192339785900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t05.py
+t04|1601148854939163900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t04.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t03.py
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t02.py
+7=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t04.py
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a1\src\t05.py
+6=t03
+4=t02
+2=t05
+8=t04
+-- END DICTIONARY
+-- START TREE 1
+11
+amo|1|amount_accumulated!1^15#1*19@
+com|1|comp_interst_per_year!1^13#1*19@
+fav|1|fav_course!3^10#1*35@
+fir|1|first_name!5^10#1*51@
+gra|1|grade!3^11#1*35@
+inc|1|inches!7^10#1*67@
+int|1|interest!1^11#1*19@
+las|1|last_name!5^11#1*51@
+met|1|meters!7^12#1*67@
+num|1|num_of_years!1^12#1*19@
+pri|1|principal!1^10#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

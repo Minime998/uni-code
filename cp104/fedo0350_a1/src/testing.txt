@@ -1,0 +1,76 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Noah Fedosoff
+ID:      200420350
+Email:   fedo0350@mylaurier.ca
+Version: 2020-9-26
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+What is "petabyte"?
+A petabyte (PB) is a lot of data:
+1 PB = 20 million 4 drawer filing cabinets filled with text
+1.5 PB = size of 10 billion photos on facebook
+20 PB = the amount of data processed by Google per day
+that's a lot of data to handle. Big Data
+"You have enemies? Good. That means you've stood up for something, something in
+your life." Winston Churchill
+-------------------------------------------------------
+
+-------------------------------------------------------
+t02
+Enter your favourite course: CP109
+Enter the grade you hope to get: C-
+You hope to get C- in your favourite course CP109
+
+Enter your favourite course: CP400
+Enter the grade you hope to get: F+
+You hope to get F+ in your favourite course CP400
+-------------------------------------------------------
+
+-------------------------------------------------------
+t03
+What is first name? Noah
+What is last name? Fedosoff
+Welcome Noah Fedosoff
+-------------------------------------------------------
+
+-------------------------------------------------------
+t04
+Enter the height in inches: 50
+The equivalent height in meters is 1.27
+-------------------------------------------------------
+
+-------------------------------------------------------
+t05
+Principal: 1000
+Interest (decimal): 0.1
+Number of years: 5
+Compound interest per year: 15
+Balance: $1645.99
+-------------------------------------------------------
+
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+
+-------------------------------------------------------
+t07
+-------------------------------------------------------
+t08
+-------------------------------------------------------
+t09
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+t12
+-------------------------------------------------------
+t13
+-------------------------------------------------------
+t14
+-------------------------------------------------------

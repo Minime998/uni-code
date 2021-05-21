@@ -1,0 +1,41 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_l3\com.python.pydev.analysis\v2_indexcache
+t10|1601586114136874000|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t10.py
+t11|1601586489518785000|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t11.py
+t14|1601589166150537900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t14.py
+t04|1601584754005482200|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t04.py
+t08|1601585673662373800|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t08.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+4=t10
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t08.py
+10=t11
+2=t14
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t14.py
+7=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t04.py
+9=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t11.py
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l3\src\t10.py
+8=t04
+6=t08
+-- END DICTIONARY
+-- START TREE 1
+13
+day|2|day_calc!1^17#1*19@day!3^13#1*35@
+dir|1|dirt!5^11#1*51@
+dis|1|discounted_price!7^15#1*67@
+gra|1|gravel!5^12#1*51@
+hrs|1|hrs_calc!1^18#1*19@
+loc|3|location1!9^11#1*83@location2!9^12#1*83@location3!9^13#1*83@
+min|3|Min_HOUR!1^11#1*19@min_to_convert!1^14#1*19@min_calc!1^19#1*19@
+mon|1|month!3^12#1*35@
+num|1|number!7^11#1*67@
+per|1|percent!7^12#1*67@
+san|1|sand!5^13#1*51@
+tot|1|total!5^16#1*51@
+yea|1|year!3^11#1*35@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

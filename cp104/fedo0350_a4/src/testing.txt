@@ -1,0 +1,115 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Noah Fedosoff
+ID:      200420350
+Email:   fedo0350@mylaurier.ca
+Version: 2020-10-25
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+Time of the day: 12
+Number of workers: 10
+The total number of pieces produced: 400
+Time of the day: 16
+Number of workers: 10
+The total number of pieces produced: 350
+-------------------------------------------------------
+
+-------------------------------------------------------
+t02
+Please enter a number between 1 and 7: 7
+The number 7 corresponds to Sunday.
+Please enter a number between 1 and 7: 0
+The number 0 corresponds to Error.
+-------------------------------------------------------
+
+-------------------------------------------------------
+t03
+Enter your income: 200000
+Federal tax: $56500.00
+Provincial tax: $7500.00
+Total tax: $64000.00
+Enter your income: 200000
+Federal tax: $56500.00
+Provincial tax: $7500.00
+Total tax: $64000.00
+Enter your income: 200000
+Federal tax: $56500.00
+Provincial tax: $7500.00
+Total tax: $64000.00
+-------------------------------------------------------
+
+-------------------------------------------------------
+t04
+Enter a pocket number: 10
+The selected pocket is black
+Enter a pocket number: 14
+The selected pocket is red
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+Enter a pocket number: 20
+The selected pocket is black
+-------------------------------------------------------
+
+-------------------------------------------------------
+t05
+Enter a first colour: red
+Enter a second colour: bluw
+The mixed colour is Error.
+Enter a first colour: 7
+Enter a second colour: 7
+The mixed colour is Error.
+-------------------------------------------------------
+
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+
+-------------------------------------------------------
+t07
+-------------------------------------------------------
+
+-------------------------------------------------------
+t08
+-------------------------------------------------------
+
+-------------------------------------------------------
+t09
+-------------------------------------------------------
+
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+
+-------------------------------------------------------
+t12
+-------------------------------------------------------
+
+-------------------------------------------------------
+t13
+-------------------------------------------------------
+
+-------------------------------------------------------
+t14
+-------------------------------------------------------

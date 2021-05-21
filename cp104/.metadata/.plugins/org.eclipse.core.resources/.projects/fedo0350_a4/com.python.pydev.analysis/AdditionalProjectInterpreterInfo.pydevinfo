@@ -1,0 +1,44 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_a4\com.python.pydev.analysis\v2_indexcache
+functions|1603683291725108200|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\functions.py
+t01|1603659553845561600|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t01.py
+t03|1603683291713139400|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t03.py
+t02|1603660538808860100|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t02.py
+t05|1603675085907677800|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t05.py
+t04|1603675085924967800|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t04.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+11=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t05.py
+4=functions
+10=t01
+8=t03
+6=t02
+12=t05
+2=t04
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t02.py
+9=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t01.py
+7=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t03.py
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\t04.py
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_a4\src\functions.py
+-- END DICTIONARY
+-- START TREE 1
+13
+col|2|col!1^12#1*19@colour_mix!3^146#5*34@
+day|1|day_num!5^12#1*51@
+fed|2|fed_result!7^14#1*67@fed_tax!3^68#5*34@
+inc|1|income!7^12#1*67@
+num|2|num_workers!9^13#1*83@num_day!3^37#5*34@
+pie|2|pieces_produced!3^15#5*34@pieces_made!9^15#1*83@
+poc|1|pocket_colour!3^108#5*34@
+pri|1|pri!11^12#1*99@
+pro|2|prov_tax!3^88#5*34@prov_result!7^13#1*67@
+res|3|result!11^16#1*99@result!1^14#1*19@result!5^14#1*51@
+sec|1|sec!11^14#1*99@
+tim|1|time!9^12#1*83@
+tot|1|total_tax!7^16#1*67@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

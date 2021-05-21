@@ -1,0 +1,37 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\noahf\Documents\workspaces\cp104\.metadata\.plugins\org.eclipse.core.resources\.projects\fedo0350_l7\com.python.pydev.analysis\v2_indexcache
+t10|1604616840622805300|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t10.py
+functions|1604616726337372000|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\functions.py
+t02|1604612030687364800|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t02.py
+t04|1604610700623582900|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t04.py
+t06|1604616840603816800|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t06.py
+t08|1604616840613790100|C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t08.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+1=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t08.py
+4=functions
+8=t02
+6=t04
+5=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t04.py
+7=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\t02.py
+2=t08
+3=C:\Users\noahf\Documents\workspaces\cp104\fedo0350_l7\src\functions.py
+-- END DICTIONARY
+-- START TREE 1
+10
+ava|1|available!1^13#1*19@
+bud|1|budget!3^88#5*34@
+emp|1|employee_payroll!3^121#5*34@
+fin|1|final!5^14#1*51@
+num|1|num_categories!3^60#5*34@
+ove|2|OVERTIME!3^15#1*35@OVERTIME_RATE!3^16#1*35@
+pow|2|power_of_two!3^18#5*34@power!7^12#1*67@
+sum|1|sum_squares!3^39#5*34@
+tar|2|target!7^11#1*67@target!5^13#1*51@
+tax|1|TAX_RATE!3^14#1*35@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

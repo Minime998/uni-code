@@ -1,0 +1,4 @@
+Upper count: 29
+Lowercount: 1228
+Digitcount: 30
+Whitecount: 260
