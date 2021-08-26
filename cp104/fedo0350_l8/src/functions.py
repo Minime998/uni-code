@@ -49,7 +49,7 @@ def generate_integer_list(n, low, high):
         x = randint(low,high)
         values.append(x)
     
-    return (values)
+    return values
 
 def list_stats(values):
     """
