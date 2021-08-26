@@ -34,4 +34,3 @@ hs.insert(1001)
 hs.debug()
 value = hs.remove(22)
 print(value)
-

@@ -105,7 +105,7 @@ class Sorted_List:
             while current is not None and current._value < value:
                 previous = current
                 current = current._next
-                
+
             new_node = _SL_Node(value, current)
             if current is None:
                 self._rear._next = new_node
@@ -137,15 +137,15 @@ class Sorted_List:
         current = self._front
         previous = None
         index = 0
-          
+
         while current is not None and current._value != key:
             previous = current
             current = current._next
             index += 1
-        
+
         if current is None:
             index = -1
-            
+
         return previous, current, index
 
     def remove(self, key):
@@ -161,7 +161,7 @@ class Sorted_List:
         -------------------------------------------------------
         """
         p, c, i = self._linear_search(key)
-        
+
         if i == -1:
             value = None
         elif i == self._count:
@@ -178,11 +178,11 @@ class Sorted_List:
                 value = c._value
                 p._next = c._next
                 c._next = None
-                self._count -= 1 
+                self._count -= 1
         if self._count == 0:
             self._rear = None
             self._front = None
-        
+
         return deepcopy(value)
 
     def remove_front(self):
@@ -204,7 +204,7 @@ class Sorted_List:
         else:
             self._front = self._front._next
             self._count -= 1
-            
+
         return deepcopy(value)
 
     def remove_many(self, key):
@@ -310,10 +310,10 @@ class Sorted_List:
             iter_to = 0
         else:
             iter_to = self._count + i
-            
+
         index = 0
         current = self._front
-        
+
         while index < iter_to:
             current = current._next
             index += 1
@@ -374,7 +374,7 @@ class Sorted_List:
         """
         current = self._front
         count = 0
-        
+
         while current is not None and current._value <= key:
             if current._value == key:
                 count += 1
@@ -396,7 +396,7 @@ class Sorted_List:
         current = self._front
         previous = None
         holder = []
-        
+
         while current is not None:
             if current._value not in holder:
                 holder.append(current._value)
@@ -479,14 +479,14 @@ class Sorted_List:
         -------------------------------------------------------
         """
         source1_node = source1._front
-        
+
         while source1_node is not None:
             value = source1_node._value
             _, current, _ = source2._linear_search(value)
-            
+
             if current is not None:
                 _, current, _ = self._linear_search(value)
-                
+
                 if current is None:
                     new_node = _SL_Node(value, None)
                     if self._rear is None:
@@ -499,7 +499,7 @@ class Sorted_List:
                         while current is not None and current._value < value:
                             previous = current
                             current = current._next
-                            
+
                         new_node = _SL_Node(value, current)
                         if current is None:
                             self._rear._next = new_node
@@ -527,11 +527,11 @@ class Sorted_List:
         -------------------------------------------------------
         """
         source1_node = source1._front
-        
+
         while source1_node is not None:
             value = source1_node._value
             _, current, _ = self._linear_search(value)
-            
+
             if current is None:
                 new_node = _SL_Node(value, None)
                 if self._rear is None:
@@ -540,11 +540,11 @@ class Sorted_List:
                 else:
                     current = self._front
                     previous = None
-                    
+
                     while current is not None and current._value < value:
                         previous = current
                         current = current._next
-                    
+
                     new_node = _SL_Node(value, current)
                     if current is None:
                         self._rear._next = new_node
@@ -553,13 +553,13 @@ class Sorted_List:
                         previous._next = new_node
                 self._count += 1
             source1_node = source1_node._next
-            
+
         source2_node = source2._front
-        
+
         while source2_node is not None:
             value = source2_node._value
             _, current, _ = self._linear_search(value)
-            
+
             if current is None:
                 new_node = _SL_Node(value, None)
                 if self._rear is None:
@@ -568,11 +568,11 @@ class Sorted_List:
                 else:
                     current = self._front
                     previous = None
-                    
+
                     while current is not None and current._value < value:
                         previous = current
                         current = current._next
-                        
+
                     new_node = _SL_Node(value, current)
                     if current is None:
                         self._rear._next = new_node
@@ -673,11 +673,11 @@ class Sorted_List:
         else:
             source_node = self._front
             other_node = other._front
-            
+
             while source_node is not None and source_node._value == other_node._value:
                 source_node = source_node._next
                 other_node = other_node._next
-                
+
             identical = source_node is None
         return identical
 
@@ -867,4 +867,3 @@ class Sorted_List:
         while current is not None:
             yield current._value
             current = current._next
-    

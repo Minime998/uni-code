@@ -32,4 +32,3 @@ print(b)
 source.reverse_r()
 for x in source:
     print(x)
-

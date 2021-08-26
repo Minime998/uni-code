@@ -13,4 +13,4 @@ negatives, zeros, positives = num_categories()
 
 print("""Number of negative values: {}
 Number of zeroes: {}
-Number of positive values: {}""".format(negatives,zeros,positives))
+Number of positive values: {}""".format(negatives, zeros, positives))

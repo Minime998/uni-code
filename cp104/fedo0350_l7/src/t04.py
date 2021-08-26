@@ -12,4 +12,4 @@ from functions import sum_squares
 
 target = int(input("Enter a target number: "))
 final = sum_squares(target)
-print("Sum of squares >= target {} is {}".format(target,final))
+print("Sum of squares >= target {} is {}".format(target, final))

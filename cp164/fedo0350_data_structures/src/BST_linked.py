@@ -534,7 +534,7 @@ class BST:
         if node is None or node._height == 1:
             # Base case: node is empty or a leaf, so no children.
             has_balanced = True
-        elif abs(self._node_height(node._left) - 
+        elif abs(self._node_height(node._left) -
                  self._node_height(node._right)) > 1:
             # Base case: left or right subtree is too deep.
             has_balanced = False
@@ -819,7 +819,7 @@ class BST:
         """
 
         return self._contains_aux(key, self._root)
-    
+
     def _contains_aux(self, key, node):
         if node is None:
             contains = False
@@ -830,7 +830,7 @@ class BST:
         else:
             contains = self._contains_aux(key, node._right)
         return contains
-    
+
     def node_counts(self):
         """
         ---------------------------------------------------------
@@ -843,11 +843,11 @@ class BST:
             two - number of nodes with two children (int)
         ----------------------------------------------------------
         """
-        zero = self._leaf_count_aux(self._root) 
-        one = self._one_child_count_aux(self._root) 
-        two = self._two_child_count_aux(self._root) 
+        zero = self._leaf_count_aux(self._root)
+        one = self._one_child_count_aux(self._root)
+        two = self._two_child_count_aux(self._root)
         return zero, one, two
-    
+
     def parent(self, key):
         """
         ---------------------------------------------------------
@@ -892,7 +892,7 @@ class BST:
         """
         assert self._root is not None, "Cannot locate a parent in an empty BST"
         return self._parent_r_aux(key, None, self._root)
-    
+
     def _parent_r_aux(self, key, parent, node):
         if node is None:
             value = None
@@ -906,4 +906,3 @@ class BST:
         else:
             value = self._parent_r_aux(key, node, node._right)
         return value
-        

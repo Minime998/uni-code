@@ -34,4 +34,3 @@ while i != 0:
     llist2.append(source2.pop(0))
     i = i - 1
 print(llist2._values)
-

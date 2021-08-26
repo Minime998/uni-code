@@ -21,4 +21,3 @@ a.insert_front(1)
 Sorts.gnome_sort(a)
 sort = Sorts.sort_test(a)
 print(sort)
-

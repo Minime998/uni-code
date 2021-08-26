@@ -14,4 +14,3 @@ salary = int(input("Enter the worker's salary: "))
 increase = float(input("Enter the yearly raise (%): "))
 
 retirement(age, salary, increase)
-

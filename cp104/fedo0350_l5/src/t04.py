@@ -15,17 +15,4 @@ v2 = float(input("Enter v2: "))
 
 result = closest(target, v1, v2)
 
-print("Closest value to {} is {}".format(target,result))
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+print("Closest value to {} is {}".format(target, result))

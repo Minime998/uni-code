@@ -14,7 +14,8 @@ first_den = int(input("Enter denominator of fraction 1: "))
 second_num = int(input("Enter numerator of fraction 2: "))
 second_den = int(input("Enter denominator of fraction 2: "))
 
-num, den, product = fraction_product(first_num,first_den,second_num,second_den)
+num, den, product = fraction_product(
+    first_num, first_den, second_num, second_den)
 
 print("""Product = {}/{}
-Decimal = {:.2f}""".format(num,den,product))
+Decimal = {:.2f}""".format(num, den, product))

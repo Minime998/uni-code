@@ -13,4 +13,4 @@ expr = input("Enter an expression: ")
 
 result = calculate(expr)
 
-print("{} = {}".format(expr,result))
+print("{} = {}".format(expr, result))

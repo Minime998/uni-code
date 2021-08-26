@@ -37,7 +37,7 @@ class Stack:
         """
 
         return len(self._values) == 0
-        
+
     def push(self, value):
         """
         -------------------------------------------------------
@@ -51,7 +51,7 @@ class Stack:
         -------------------------------------------------------
         """
         self._values.append(deepcopy(value))
-        return 
+        return
 
     def pop(self):
         """
@@ -83,7 +83,7 @@ class Stack:
         assert len(self._values) > 0, "Cannot peek at an empty stack"
         value = deepcopy(self._values[-1])
         return value
-    
+
     def split_alt(self):
         """
         -------------------------------------------------------
@@ -107,7 +107,7 @@ class Stack:
                 count += 1
 
         return target1, target2
-    
+
     def reverse(self):
         """
         -------------------------------------------------------
@@ -125,7 +125,7 @@ class Stack:
         for x in range(i):
             self._values.append(holding[x])
         return
-        
+
     def __iter__(self):
         """
         FOR TESTING ONLY

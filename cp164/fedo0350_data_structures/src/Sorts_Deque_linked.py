@@ -44,10 +44,10 @@ class Sorts:
         while current is not None:
             if current._prev is None:
                 current = current._next
-                
+
             if current._value >= current._prev._value:
                 current = current._next
-                
+
             else:
                 temp = current._prev._value  # copy swap
                 temp_two = current._value

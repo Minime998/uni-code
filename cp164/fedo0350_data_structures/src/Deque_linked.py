@@ -212,7 +212,7 @@ class Deque:
                 r._prev = l
             elif r._next is r:
                 r._next = l
-                
+
             if l._prev is None:
                 self._front = l
             else:

@@ -133,7 +133,7 @@ class Set:
                 i = -1
         else:
             i = -1
-                
+
         return i
 
     def _set_slot(self):
@@ -174,16 +174,16 @@ class Set:
         -------------------------------------------------------
         """
         assert self._slot is not None, "Cannot add to a full set"
-        inserted = False 
-        
+        inserted = False
+
         i = self._linear_search(value)
-        self._set_slot() 
+        self._set_slot()
         if i == -1:
             self._values[self._slot] = value
             inserted = True
             self._count += 1
             self._set_slot()
-            
+
         return inserted
 
     def delete(self, key):

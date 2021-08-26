@@ -8,10 +8,11 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-10-29"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
 RETIREMENT = 65
+
 
 def sum_even(num):
     """
@@ -26,9 +27,10 @@ def sum_even(num):
     ------------------------------------------------------
     """
     total = 0
-    for x in range(2,num+1,2):
+    for x in range(2, num+1, 2):
         total = total+x
     return total
+
 
 def draw_rectangle(height, width, char):
     """
@@ -47,10 +49,11 @@ def draw_rectangle(height, width, char):
     """
     for i in range(1, height+1):
         for h in range(1, width+1):
-            print(char, end = '')
+            print(char, end='')
         print()
-    
-    return 
+
+    return
+
 
 def bottles_of_beer(n):
     """
@@ -64,14 +67,15 @@ def bottles_of_beer(n):
         None
     ------------------------------------------------------
     """
-    for x in range(n,1,-1):
+    for x in range(n, 1, -1):
         print("""{} bottles of beer on the wall, {} bottles of beer.
-        Take one down, pass it around, {} bottles of beer on the wall.""".format(x,x,x-1))
-    
+        Take one down, pass it around, {} bottles of beer on the wall.""".format(x, x, x-1))
+
     print("""1 bottle of beer on the wall, 1 bottle of beer.
     Take one down, pass it around, 1 bottle of beer on the wall""")
-    
-    return 
+
+    return
+
 
 def retirement(age, salary, increase):
     """
@@ -90,12 +94,13 @@ def retirement(age, salary, increase):
     """
     print("""Age     Salary
     -----------------
-    {}      {:,.2f}""".format(age,salary))
-    for x in range(age,RETIREMENT):
-        salary*=((increase/100)+1)
+    {}      {:,.2f}""".format(age, salary))
+    for x in range(age, RETIREMENT):
+        salary *= ((increase/100)+1)
         age += 1
-        print("{}      {:,.2f}".format(age,salary))
+        print("{}      {:,.2f}".format(age, salary))
     return
+
 
 def statistics(n):
     """
@@ -118,7 +123,7 @@ def statistics(n):
     average = first_value
     maxum = first_value
     minum = first_value
-    for x in range(1,n,1):
+    for x in range(1, n, 1):
         next_value = float(input("Next value: "))
         total += next_value
         if maxum < next_value:
@@ -126,9 +131,5 @@ def statistics(n):
         if minum > next_value:
             minum = next_value
     average = total/n
-        
-    return minum, maxum, total, average, 
-        
-    
-    
 
+    return minum, maxum, total, average,

@@ -127,7 +127,7 @@ class Priority_Queue:
         # your code here
 
         return
-    
+
     def split_key(self, key):
         """
         -------------------------------------------------------
@@ -149,7 +149,7 @@ class Priority_Queue:
         target2 = Priority_Queue()
         while len(self._values) != 0:
             value = self._values.pop(0)
-            if value < key: 
+            if value < key:
                 target1._values.append(value)
             elif value >= key:
                 target2._values.append(value)

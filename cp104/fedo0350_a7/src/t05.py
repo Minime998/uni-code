@@ -9,10 +9,8 @@ __updated__ = "2020-04-20"
 '''
 from functions import is_chain
 
-words_list = ['apple','attack']
+words_list = ['apple', 'attack']
 
 result = is_chain(words_list)
 
 print("result is {}".format(result))
-
-

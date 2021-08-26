@@ -12,4 +12,4 @@ from functions import employee_payroll
 total, average = employee_payroll()
 
 print("""Total payment: ${:,.2f}
-Average payment: ${:,.2f}""".format(total,average))
+Average payment: ${:,.2f}""".format(total, average))

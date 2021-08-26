@@ -9,10 +9,10 @@ __updated__ = "2020-04-20"
 '''
 from functions import list_stats
 
-values = [94.3,21.5,34.8,100.1]
+values = [94.3, 21.5, 34.8, 100.1]
 
 smallest, largest, total, average = list_stats(values)
 print("""Smallest value: {}
 Largest value: {}
 Total: {}
-Average: {}""".format(smallest,largest,total,average))
+Average: {}""".format(smallest, largest, total, average))

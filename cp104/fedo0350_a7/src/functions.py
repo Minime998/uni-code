@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-22"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
+
 
 def driver_license(right_list, student_list):
     """
@@ -35,6 +36,7 @@ def driver_license(right_list, student_list):
             wrong_list.append(i)
     return cor_count, incor_count, wrong_list
 
+
 def sum_digit(my_str):
     """
     -------------------------------------------------------
@@ -50,8 +52,9 @@ def sum_digit(my_str):
     total = 0
     for i in my_str:
         total += int(i)
-    
+
     return total
+
 
 def find_frequent(my_str):
     """
@@ -67,14 +70,15 @@ def find_frequent(my_str):
     """
     counter = 0
     item = my_str[0]
-    
+
     for i in my_str:
         currence = my_str.count(i)
         if currence > counter:
             counter = currence
             item = i
-    
-    return item 
+
+    return item
+
 
 def add_spaces(my_str):
     """
@@ -89,7 +93,7 @@ def add_spaces(my_str):
     ------------------------------------------------------
     """
     sentence = []
-    
+
     sentence.append(my_str[0])
     for char in my_str[1:]:
         if char.islower():
@@ -98,8 +102,9 @@ def add_spaces(my_str):
             sentence.append(" ")
             sentence.append(char.lower())
     result = ''.join(sentence)
-    
-    return result 
+
+    return result
+
 
 def is_chain(words_list):
     """
@@ -116,19 +121,5 @@ def is_chain(words_list):
     result = True
     if words_list[0][-1] != words_list[1][1]:
         result = False
-    
+
     return result
-    
-    
-    
-    
-    
-        
-    
-        
-    
-    
-        
-    
-    
-    

@@ -110,7 +110,7 @@ class Queue:
         return value
 
         return value
-    
+
     def is_identical(self, target):
         """
         ----------------

@@ -57,7 +57,7 @@ def create_reversed():
     -------------------------------------------------------
     """
     values = List()
-    
+
     for i in range(SIZE - 1, -1, -1):
         values.append(Number(i))
 
@@ -103,7 +103,7 @@ def test_sort(title, func):
     sorted_list = create_sorted()
     rev_list = create_reversed()
     random_list = create_randoms()
-    
+
     func(sorted_list)
     sorted_compare = Number.comparisons
     sorted_swaps = Sorts.swaps

@@ -28,7 +28,7 @@ print(SEP)
 print("Remove 3")
 removed = source.remove(3)
 print("Removed:", removed)
-print("Values in set:")                                                     
+print("Values in set:")
 for v in source:
     print(v)
 print(SEP)

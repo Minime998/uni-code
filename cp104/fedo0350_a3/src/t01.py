@@ -10,8 +10,9 @@ __updated__ = "2020-11-18"
 
 from functions import falling_distance
 
-time_falling = int(input("Enter the time (in secs): ")) 
+time_falling = int(input("Enter the time (in secs): "))
 
 object_fall = falling_distance(time_falling)
 
-print("The Object has falling {:.2f} meters in {} seconds.".format(object_fall,time_falling))
+print("The Object has falling {:.2f} meters in {} seconds.".format(
+    object_fall, time_falling))

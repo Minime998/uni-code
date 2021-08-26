@@ -667,7 +667,7 @@ class Sorts:
 
         a[i] = a[j]
         return
-    
+
     @staticmethod
     def radix_sort(a):
         """
@@ -701,7 +701,7 @@ class Sorts:
                         a[counter] = bucket[y].pop(0)
                         counter += 1
         return
-    
+
     @staticmethod
     def gnome_sort(a):
         """

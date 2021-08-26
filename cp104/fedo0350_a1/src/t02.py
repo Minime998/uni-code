@@ -10,4 +10,5 @@ __updated__ = "2020-09-26"
 fav_course = input("Enter your favourite course: ")
 grade = input("Enter the grade you hope to get: ")
 
-print("You hope to get {0} in your favourite course {1}".format(grade,fav_course))
+print("You hope to get {0} in your favourite course {1}".format(
+    grade, fav_course))

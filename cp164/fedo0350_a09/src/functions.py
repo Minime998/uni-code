@@ -57,6 +57,5 @@ def comparison_total(hash_set):
             max_word = x
         elif x.comparisons > max_word.comparisons:
             max_word = x
-    
+
     return total, max_word
-        

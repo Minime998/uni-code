@@ -115,7 +115,7 @@ class List:
             valid = False
         elif i < -len(self._values):
             valid = False
-             
+
         return valid
 
     def _linear_search(self, key):
@@ -141,7 +141,7 @@ class List:
             else:
                 i = -1
             g += 1
-                
+
         return i
 
     def _swap(self, i, j):
@@ -228,7 +228,7 @@ class List:
                 n = len(self._values)
             i += 1
         """
-        
+
         return
 
     def combine(self, source1, source2):
@@ -261,7 +261,7 @@ class List:
         elif len(source1) == 0:
             while not source2.is_empty():
                 self._values.append(source2.pop(0))
-        
+
         return
 
     def copy(self):
@@ -355,7 +355,7 @@ class List:
         -------------------------------------------------------
         """
         self._values[i:i] = [value]
-        
+
         return
 
     def intersection(self, source1, source2):
@@ -408,7 +408,7 @@ class List:
         n = len(self._values)
         t = 0
         identical = True
-        
+
         if len(self._values) != 0 and len(target._values) != 0:
             while t != n and identical is not False:
                 if target[t] != self._values[t]:
@@ -430,7 +430,7 @@ class List:
         -------------------------------------------------------
         """
         assert (len(self._values) > 0), 'Cannot find maximum of an empty list'
-        
+
         n = len(self._values)
         g = 0
         value = self._values[0]
@@ -641,7 +641,7 @@ class List:
             while len(self._values) != 0 and count % 2 != 0:
                 target2._values.append(self._values.pop(0))
                 count += 1
-        
+
         return target1, target2
 
     def split_apply(self, func):
@@ -721,4 +721,3 @@ class List:
         """
         for value in self._values:
             yield value
-

@@ -164,7 +164,7 @@ class Queue:
         source._count -= 1
 
         node = _Queue_Node(front, None)
-        
+
         if self._rear is None:
             self._rear = node
             self._front = self._rear
@@ -190,7 +190,7 @@ class Queue:
         -------------------------------------------------------
         """
         assert source._front is not None, "Cannot append an empty queue"
-        
+
         return
 
     def combine(self, source1, source2):

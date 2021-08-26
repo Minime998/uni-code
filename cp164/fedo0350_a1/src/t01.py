@@ -11,4 +11,3 @@ from functions import is_leap_year
 
 leap_year = is_leap_year(1900)
 print(leap_year)
-

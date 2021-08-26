@@ -11,6 +11,6 @@ from functions import convert_date
 
 date_int = int(input("Enter a fate in the format MMDDYYYY: "))
 
-day,month,year = convert_date(date_int)
+day, month, year = convert_date(date_int)
 
-print("{}/{:02d}/{}".format(day,month,year))
+print("{}/{:02d}/{}".format(day, month, year))

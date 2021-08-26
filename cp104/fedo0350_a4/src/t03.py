@@ -17,4 +17,4 @@ total_tax = fed_result+prov_result
 
 print("""Federal tax: ${:.2f}
 Provincial tax: ${:.2f}
-Total tax: ${:.2f}""".format(fed_result,prov_result,total_tax))
+Total tax: ${:.2f}""".format(fed_result, prov_result, total_tax))

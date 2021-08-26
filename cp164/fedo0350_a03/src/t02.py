@@ -21,4 +21,3 @@ target1, target2 = source.split_alt()
 print(source._values)
 print(target1._values)
 print(target2._values)
-

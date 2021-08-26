@@ -90,5 +90,6 @@ def letter_table(bst):
     print("Letter  Count          %")
     print("------------------------")
     for x in bst_inorder:
-        print("{:>2}{:9,d}{:>13.2%}".format(x.letter, x.count, x.count / counter))
+        print("{:>2}{:9,d}{:>13.2%}".format(
+            x.letter, x.count, x.count / counter))
     return

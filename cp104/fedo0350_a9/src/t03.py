@@ -9,7 +9,7 @@ __updated__ = "2020-04-20"
 '''
 from functions import flatten_2d
 
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 flatten = flatten_2d(matrix)
 

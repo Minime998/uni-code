@@ -33,6 +33,7 @@ def diameter(radius):
     diam = 2*radius
     return diam
 
+
 def square_pyramid(base, height):
     """
     -------------------------------------------------------
@@ -54,6 +55,7 @@ def square_pyramid(base, height):
     area = (base**2)+(2*base)*sqrt(((base**2)/4)+(height**2))
     volume = (base**2)*(height/3)
     return sh, area, volume
+
 
 def total_change(nickels, dimes, quarters, loonies, toonies):
     """
@@ -78,8 +80,10 @@ def total_change(nickels, dimes, quarters, loonies, toonies):
         total - total value of coins (float)
     ---
     """
-    total = (nickels*Nickel)+(dimes*Dime)+(quarters*Quarter)+(loonies*Loonie)+(toonies*Toonie)
+    total = (nickels*Nickel)+(dimes*Dime)+(quarters*Quarter) + \
+        (loonies*Loonie)+(toonies*Toonie)
     return total
+
 
 def fraction_product(num1, den1, num2, den2):
     """
@@ -103,6 +107,7 @@ def fraction_product(num1, den1, num2, den2):
     product = num/den
     return num, den, product
 
+
 def f_to_c(fahrenheit):
     """
     -------------------------------------------------------
@@ -117,7 +122,3 @@ def f_to_c(fahrenheit):
     """
     celsius = (((fahrenheit-Fahren_Freeze)*5)/9)
     return celsius
-
-
-    
-

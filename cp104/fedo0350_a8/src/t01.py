@@ -9,15 +9,15 @@ __updated__ = "2020-04-20"
 '''
 from functions import total_nums
 
-fh = open("text_numbers.txt",'r')
+fh = open("text_numbers.txt", 'r')
 
 numlist, total = total_nums(fh)
 
 print("""All nums: {}
-Sum of all nums: {}""".format(numlist,total))
+Sum of all nums: {}""".format(numlist, total))
 fh.close()
 
-fh = open("output_t01.txt",'w')
+fh = open("output_t01.txt", 'w')
 fh.write("List of nums:")
 for x in range(len(numlist)):
     fh.write(str(numlist[x])+" ")

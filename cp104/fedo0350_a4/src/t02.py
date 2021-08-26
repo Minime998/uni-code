@@ -13,4 +13,4 @@ day_num = int(input("Please enter a number between 1 and 7: "))
 
 result = num_day(day_num)
 
-print("The number {} corresponds to {}.".format(day_num,result))
+print("The number {} corresponds to {}.".format(day_num, result))

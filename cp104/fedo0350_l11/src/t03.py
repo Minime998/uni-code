@@ -19,5 +19,3 @@ value_type = input("Type of values: ")
 matrix = generate_matrix_num(rows, cols, low, high, value_type)
 
 print_matrix_num(matrix, value_type)
-
-

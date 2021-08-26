@@ -11,7 +11,7 @@ from functions import is_prime
 
 num = int(input("Enter a positive integer number: "))
 
-if num >=0:
+if num >= 0:
     result = is_prime(num)
     if result is True:
         print("{} is a prime number".format(num))

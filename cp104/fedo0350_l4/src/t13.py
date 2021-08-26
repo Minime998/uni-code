@@ -14,5 +14,4 @@ fahren = int(input("Enter a temperature (f): "))
 
 celsius = f_to_c(fahren)
 
-print("{:.0f} F = {:.0f} C".format(fahren,celsius))
-
+print("{:.0f} F = {:.0f} C".format(fahren, celsius))

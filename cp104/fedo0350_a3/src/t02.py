@@ -19,4 +19,4 @@ total_cals = cals_from_fat+cals_from_carbs
 
 print("""Fat calories: {}
 Carb calories: {}
-Total calories: {}""".format(cals_from_fat,cals_from_carbs,total_cals))
+Total calories: {}""".format(cals_from_fat, cals_from_carbs, total_cals))

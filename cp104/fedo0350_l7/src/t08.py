@@ -15,4 +15,4 @@ available = float(input("Monthly budget: "))
 expenses, balance, status = budget(available)
 
 print("""Total expenses: ${:.2f}
-{}: ${:.2f}""".format(expenses,status,balance))
+{}: ${:.2f}""".format(expenses, status, balance))

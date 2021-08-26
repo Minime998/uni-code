@@ -32,7 +32,7 @@ class BST:
         updated = parent._left
         right = updated._right
         rtemp._left = right
-        updated._right = rtemp 
+        updated._right = rtemp
         rtemp._update_height()
         updated._update_height()
 
@@ -82,7 +82,8 @@ class BST:
             elif current._left is None and current._right is not None:
                 current._left = current._right
                 current._right = None
-            self._mirror_aux(current._left) and self._mirror_aux(current._right)
+            self._mirror_aux(current._left) and self._mirror_aux(
+                current._right)
 
         return
 

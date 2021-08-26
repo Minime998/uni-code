@@ -10,4 +10,4 @@ __updated__ = "2020-04-20"
 from functions import power_of_two
 target = int(input("Enter target number: "))
 power = power_of_two(target)
-print("The closest power of 2 >= {} is {}".format(target,power))
+print("The closest power of 2 >= {} is {}".format(target, power))

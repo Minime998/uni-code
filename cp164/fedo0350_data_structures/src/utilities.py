@@ -33,7 +33,7 @@ def array_to_stack(stack, source):
         stack.push(source[i - 1])
         source.pop(i - 1)
         i -= 1
-    return 
+    return
 
 
 def stack_to_array(stack, target):
@@ -163,8 +163,8 @@ def pq_to_array(pq, target):
     """
     while not pq.is_empty():
         target.append(pq.remove())
-    
-    return 
+
+    return
 
 
 def array_to_list(llist, source):
@@ -312,4 +312,3 @@ def list_test(source):
     # print the results of the method calls and verify by hand
 
     return
-

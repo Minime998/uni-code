@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-12-03"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 import random
-#[constants]
+# [constants]
+
 
 def generate_matrix_num(rows, cols, low, high, value_type):
     """
@@ -31,11 +32,14 @@ def generate_matrix_num(rows, cols, low, high, value_type):
     -------------------------------------------------------
     """
     if value_type == 'float':
-        matrix = [[random.uniform(low,high) for x in range(cols)] for x in range(rows)]
+        matrix = [[random.uniform(low, high)
+                   for x in range(cols)] for x in range(rows)]
     else:
-        matrix = [[random.randint(low,high) for x in range(cols)] for x in range(rows)] 
-    
+        matrix = [[random.randint(low, high)
+                   for x in range(cols)] for x in range(rows)]
+
     return matrix
+
 
 def print_matrix_num(matrix, value_type):
     """
@@ -57,29 +61,29 @@ def print_matrix_num(matrix, value_type):
     count = 0
     if value_type == "float":
         for x in range(cols):
-            print("{:4}".format(x), end =" ")
+            print("{:4}".format(x), end=" ")
         print("")
         if value_type == "float":
             for row in matrix:
-                print(count, end = " ")
+                print(count, end=" ")
                 for val in row:
-                    print('{:4.2f}'.format(val),end = " ")
-                count +=1
+                    print('{:4.2f}'.format(val), end=" ")
+                count += 1
                 print("")
     if value_type == "int":
         for x in range(cols):
-            print("{:4}".format(x), end =" ")
+            print("{:4}".format(x), end=" ")
         print("")
         if value_type == "int":
             for row in matrix:
-                print(count, end = "")
+                print(count, end="")
                 for val in row:
-                    print('{:4}'.format(val),end = "")
-                count+=1
+                    print('{:4}'.format(val), end="")
+                count += 1
                 print("")
-        
 
     return
+
 
 def stats(matrix):
     """
@@ -99,7 +103,7 @@ def stats(matrix):
     smallest = matrix[0][0]
     largest = matrix[0][0]
     count = 0
-    
+
     total = sum(map(sum, matrix))
 
     for lists in matrix:
@@ -109,11 +113,11 @@ def stats(matrix):
             if nums > largest:
                 largest = nums
             count += 1
-    
+
     average = total/count
-    
-    
+
     return smallest, largest, total, average
+
 
 def count_frequency(matrix, char):
     """
@@ -130,12 +134,13 @@ def count_frequency(matrix, char):
     -------------------------------------------------------
     """
     count = 0
-    
+
     for row in matrix:
         for b in row:
             if b == char:
-                count +=1
+                count += 1
     return count
+
 
 def matrix_equal(matrix1, matrix2):
     """
@@ -153,7 +158,3 @@ def matrix_equal(matrix1, matrix2):
     ------------------------------------------------------
     """
     return
-        
-    
-    
-

@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-26"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
+
 
 def customer_by_id(fh, id_number):
     """
@@ -28,8 +29,7 @@ def customer_by_id(fh, id_number):
     """
     result = []
     line = fh.readline()
-    
-    
+
     while line != "" and result == []:
         line = line.strip().split(",")
         check = line[0]
@@ -37,6 +37,7 @@ def customer_by_id(fh, id_number):
             result = line
         line = fh.readline()
     return result
+
 
 def customer_append(fh, fields):
     """
@@ -51,11 +52,12 @@ def customer_append(fh, fields):
        None
     -------------------------------------------------------
     """
-    strfields= ','.join(fields)
+    strfields = ','.join(fields)
     fh.write(strfields)
     fh.write("\n")
 
     return
+
 
 def number_stats(fh):
     """
@@ -87,10 +89,11 @@ def number_stats(fh):
         if largest < data:
             largest = data
         line = fh.readline()
-    
+
     average = total/count
-    
+
     return smallest, largest, total, average
+
 
 def find_longest(fh):
     """
@@ -113,8 +116,9 @@ def find_longest(fh):
             longest = len(line)
             word = line
         line = fh.readline()
-    
-    return word 
+
+    return word
+
 
 def file_copy(fh_1, fh_2):
     """
@@ -132,22 +136,5 @@ def file_copy(fh_1, fh_2):
     """
     for line in fh_1:
         fh_2.write(line)
-        
+
     return
-    
-        
-    
-    
-    
-        
-        
-        
-        
-
-    
-
-
-        
-
-    
-    

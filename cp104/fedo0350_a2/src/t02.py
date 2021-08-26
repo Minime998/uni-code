@@ -7,14 +7,14 @@ Email: fedo0350@mylaurier.ca
 __updated__ = "2020-10-02"
 
 '''
-#import
+# import
 from datetime import datetime
 
-#input
+# input
 unform_date = int(input("Enter a date in the format MMDDYYYY: "))
 
-#calculations
+# calculations
 form_date = datetime.strptime(str(unform_date), '%m%d%Y').strftime('%d/%m/%Y')
 
-#output
+# output
 print(form_date)

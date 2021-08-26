@@ -106,7 +106,7 @@ class Queue:
             self._front = 0
         if self._count == self._max_size:
             self._rear = None
-        
+
         return
 
     def remove(self):
@@ -127,7 +127,7 @@ class Queue:
         if self._count != 0:
             self._count -= 1
         if self._rear is None:
-            self._rear = 0 
+            self._rear = 0
         return value
 
     def peek(self):

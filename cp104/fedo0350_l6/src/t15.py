@@ -16,4 +16,4 @@ minum, maxum, total, average = statistics(num)
 print("""Minimum: {:.2f}
 Maximum: {:.2f}
 Total: {:.2f}
-Average: {:.2f}""".format(minum,maxum,total,average))
+Average: {:.2f}""".format(minum, maxum, total, average))

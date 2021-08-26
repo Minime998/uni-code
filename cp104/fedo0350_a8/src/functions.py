@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-28"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
+
 
 def total_nums(fh):
     """
@@ -34,6 +35,7 @@ def total_nums(fh):
             total += int(x)
     return numlist, total
 
+
 def locate_median(fh):
     """
     -------------------------------------------------------
@@ -48,23 +50,24 @@ def locate_median(fh):
     """
     line = fh.readline()
     numlist = []
-    
+
     while line != "":
         linelist = line.strip().split(" ")
         for x in range(len(linelist)):
             numlist.append(int(linelist[x]))
         line = fh.readline()
-    
+
     numlist.sort()
     first_middle = int(len(numlist)/2)-1
     second_middle = int(len(numlist)/2)
     middle = int(len(numlist)/2)
-    if len(numlist)%2 == 0:
+    if len(numlist) % 2 == 0:
         median = (numlist[first_middle]+numlist[second_middle])/2
     else:
         median = numlist[middle]
-             
+
     return median
+
 
 def file_analysis(fh):
     """
@@ -94,11 +97,12 @@ def file_analysis(fh):
                     lowercount += 1
                 elif char.isupper():
                     uppercount += 1
-                
+
         line = fh.readline()
-    
+
     return uppercount, lowercount, digitcount, whitecount
-    
+
+
 def is_valid(linestring):
     """
     -------------------------------------------------------
@@ -110,16 +114,17 @@ def is_valid(linestring):
     Returns:
         total - total of all the digits in s (int)
     ------------------------------------------------------
-    """ 
+    """
     valid = True
     if "/" not in linestring:
         valid = False
         if "-" not in linestring:
             valid = False
-    
+
     return valid
 
-def valid_sn_file(fh,oh1,oh2):
+
+def valid_sn_file(fh, oh1, oh2):
     """
     -------------------------------------------------------
     Extracts and calculates the total of all digits in s.
@@ -130,7 +135,7 @@ def valid_sn_file(fh,oh1,oh2):
     Returns:
         total - total of all the digits in s (int)
     ------------------------------------------------------
-    """ 
+    """
     line = fh.readline()
     while line != "":
         valid = is_valid(line.strip())
@@ -140,15 +145,3 @@ def valid_sn_file(fh,oh1,oh2):
             oh2.write(line)
         line = fh.readline()
     return
-
-
-          
-     
-        
-    
-        
-        
-    
-    
-    
-
