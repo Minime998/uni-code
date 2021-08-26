@@ -197,7 +197,7 @@ class List:
             current = current._next
             index += 1
 
-        if(current == None):
+        if(current is None):
             index = -1
 
         return previous, current, index
@@ -370,13 +370,13 @@ class List:
         current = self._front
         counter = 0
         if i >= 0:
-            while current != None and counter != i:
+            while current is not None and counter != i:
                 current = current._next
                 counter += 1
             value = deepcopy(current._value)
         else:
             i = self._count + i
-            while current != None and counter != i:
+            while current is not None and counter != i:
                 current = current._next
                 counter += 1
             value = deepcopy(current._value)
@@ -401,13 +401,13 @@ class List:
         current = self._front
         counter = 0
         if i >= 0:
-            while current != None and counter != i:
+            while current is not None and counter != i:
                 current = current._next
                 counter += 1
             current._value = deepcopy(value)
         else:
             i = self._count + i
-            while current != None and counter != i:
+            while current is not None and counter != i:
                 current = current._next
                 counter += 1
             current._value = deepcopy(value)
@@ -724,7 +724,7 @@ class List:
             identical = False
         elif self._count == 0 and target._count == 0:
             identical = True
-        elif identical != True or identical != False:
+        elif identical is not True or identical is not False:
             source_node = self._front
             target_node = target._front
     

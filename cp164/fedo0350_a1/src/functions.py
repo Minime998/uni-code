@@ -126,7 +126,7 @@ def file_analyze(fv):
                     l += 1
                 elif char.isupper():
                     u += 1
-                elif char.islower() == False and char.isupper() == False and type(char) == str:
+                elif char.islower() is False and char.isupper() is False and type(char) == str:
                     r += 1
                 
         line = fv.readline()

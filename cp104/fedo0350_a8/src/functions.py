@@ -134,7 +134,7 @@ def valid_sn_file(fh,oh1,oh2):
     line = fh.readline()
     while line != "":
         valid = is_valid(line.strip())
-        if valid == True:
+        if valid is True:
             oh1.write(line)
         else:
             oh2.write(line)

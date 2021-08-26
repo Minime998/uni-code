@@ -70,7 +70,7 @@ class Queue:
         -------------------------------------------------------
         """
         full = False
-        if self._rear == None:
+        if self._rear is None:
             full = True
         return full
 
@@ -126,7 +126,7 @@ class Queue:
         self._front = (self._front + 1) % self._max_size
         if self._count != 0:
             self._count -= 1
-        if self._rear == None:
+        if self._rear is None:
             self._rear = 0 
         return value
 
