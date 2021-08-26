@@ -13,7 +13,7 @@ num = int(input("Enter a positive integer number: "))
 
 if num >=0:
     result = is_prime(num)
-    if result == True:
+    if result is True:
         print("{} is a prime number".format(num))
     else:
         print("{} is not a prime number".format(num))

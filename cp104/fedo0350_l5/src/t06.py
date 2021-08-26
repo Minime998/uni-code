@@ -15,7 +15,7 @@ j_number = int(input("Enter second number to divide by: "))
 
 result = is_divisible(n_number,i_number,j_number)
 
-if result == True:
+if result is True:
     print("{} is evenly divisible by {} and {}".format(n_number,i_number,j_number))
-elif result == False:
+elif result is False:
     print("{} is not evenly divisible by {} and {}".format(n_number,i_number,j_number))

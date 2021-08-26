@@ -244,7 +244,7 @@ def pq_split_key(source, key):
     """
     target1 = Priority_Queue()
     target2 = Priority_Queue()
-    while source.is_empty() == False:
+    while source.is_empty() is False:
         value = source.remove()
         if value >= key:
             target2.insert(value)

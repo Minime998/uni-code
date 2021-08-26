@@ -66,7 +66,7 @@ class Priority_Queue:
         -------------------------------------------------------
         """
         self._values.append(deepcopy(value))
-        if self._first == None or value < self._values[self._first]:
+        if self._first is None or value < self._values[self._first]:
             self._first = self._values.index(value)
         return
 

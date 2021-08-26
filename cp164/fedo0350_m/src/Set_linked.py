@@ -110,7 +110,7 @@ class Set:
         """
         value = None
         _, current = self._linear_search(key)
-        if current != None:
+        if current is not None:
             value = current._value
             
         return value

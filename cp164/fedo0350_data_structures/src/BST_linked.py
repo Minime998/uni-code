@@ -821,7 +821,7 @@ class BST:
         return self._contains_aux(key, self._root)
     
     def _contains_aux(self, key, node):
-        if node == None:
+        if node is None:
             contains = False
         elif key == node._value:
             contains = True
@@ -894,7 +894,7 @@ class BST:
         return self._parent_r_aux(key, None, self._root)
     
     def _parent_r_aux(self, key, parent, node):
-        if node == None:
+        if node is None:
             value = None
         elif key == node._value:
             if parent is None:

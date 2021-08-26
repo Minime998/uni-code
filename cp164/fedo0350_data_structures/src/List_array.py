@@ -410,7 +410,7 @@ class List:
         identical = True
         
         if len(self._values) != 0 and len(target._values) != 0:
-            while t != n and identical != False:
+            while t != n and identical is not False:
                 if target[t] != self._values[t]:
                     identical = False
                 t += 1
