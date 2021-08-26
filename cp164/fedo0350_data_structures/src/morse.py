@@ -95,7 +95,7 @@ class ByLetter:
               False otherwise (boolean)
         -------------------------------------------------------
         """
-            
+
         return self.letter < target.letter
 
     def __le__(self, target):
@@ -111,7 +111,7 @@ class ByLetter:
               False otherwise (boolean)
         -------------------------------------------------------
         """
-            
+
         return self.letter <= target.letter
 
     def __str__(self):
@@ -278,7 +278,7 @@ def encode_morse(bst, text):
                 letter_morse = bst.retrieve(byletter)
                 result += letter_morse.code + " "
         result += '\n'
-        
+
     return result
 
 

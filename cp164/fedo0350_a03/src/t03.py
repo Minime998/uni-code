@@ -20,4 +20,3 @@ while i != 0:
 print(source._values)
 stack_reverse(source)
 print(source._values)
-

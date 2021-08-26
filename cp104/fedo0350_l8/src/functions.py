@@ -8,10 +8,11 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-12"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 from random import randint
 
-#[constants]
+# [constants]
+
 
 def get_digit_name(n):
     """
@@ -25,9 +26,11 @@ def get_digit_name(n):
         name - matching digit, 0 = "zero", 9 = "nine" (str)
     -------------------------------------------------------
     """
-    digits = ["zero","one","two","three","four","five","six","seven","eight","nine"]
-    
-    return digits[n] 
+    digits = ["zero", "one", "two", "three", "four",
+              "five", "six", "seven", "eight", "nine"]
+
+    return digits[n]
+
 
 def generate_integer_list(n, low, high):
     """
@@ -45,11 +48,12 @@ def generate_integer_list(n, low, high):
     -------------------------------------------------------
     """
     values = []
-    for nums in range(0,n):
-        x = randint(low,high)
+    for nums in range(0, n):
+        x = randint(low, high)
         values.append(x)
-    
+
     return values
+
 
 def list_stats(values):
     """
@@ -70,7 +74,7 @@ def list_stats(values):
     total = values[0]
     smallest = values[0]
     largest = values[0]
-    
+
     for x in values[1:]:
         if x < smallest:
             smallest = x
@@ -79,8 +83,9 @@ def list_stats(values):
                 largest = x
         total = total+x
     average = total/len(values)
-        
+
     return smallest, largest, total, average
+
 
 def linear_search(a, v):
     """
@@ -102,10 +107,11 @@ def linear_search(a, v):
         for value in a:
             if v != value:
                 index_counter += 1
-            elif v==value:
+            elif v == value:
                 index = index_counter
         index_counter = index
     return index
+
 
 def list_sums(source1, source2):
     """
@@ -122,19 +128,7 @@ def list_sums(source1, source2):
     -------------------------------------------------------
     """
     target = []
-    for x in range(0,len(source1)):
+    for x in range(0, len(source1)):
         target.append(source1[x]+source2[x])
-    
+
     return target
-        
-        
-
-
-
-
-        
-    
-  
-    
-    
-

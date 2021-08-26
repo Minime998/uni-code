@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-08"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
+
 
 def perfect_square(num):
     """
@@ -26,15 +27,16 @@ def perfect_square(num):
     -------------------------------------------------------
     """
     if num >= 0:
-        print("Perfect square below {} are: ".format(num), end ='')
-        for x in range(1,num):
-            if (x**0.5)**2 ==x:
-                print(x,"", end = '')
-                
+        print("Perfect square below {} are: ".format(num), end='')
+        for x in range(1, num):
+            if (x**0.5)**2 == x:
+                print(x, "", end='')
+
     else:
         print("Error: you entered a negative number")
-        
+
     return
+
 
 def factorial(num):
     """
@@ -50,9 +52,10 @@ def factorial(num):
     -------------------------------------------------------
     """
     fact = 1
-    for x in range(1,num+1):
+    for x in range(1, num+1):
         fact = fact*x
     return fact
+
 
 def is_prime(num):
     """
@@ -70,15 +73,15 @@ def is_prime(num):
     i = 2
     toggle = 0
     while i < num:
-        if num%i == 0:
+        if num % i == 0:
             toggle = 1
             result = False
         i = i+1
     if toggle == 0:
         result = True
-            
-        
+
     return result
+
 
 def print_pattern(num_rows):
     """
@@ -97,8 +100,9 @@ def print_pattern(num_rows):
         for c in range(r):
             print("#", end='')
         print('')
-        
+
     return
+
 
 def winner():
     """
@@ -122,12 +126,5 @@ def winner():
         elif team == "green":
             green_counter += 1
         team = input("Enter the winning team: ")
-    
-    return green_counter, red_counter
-        
-    
-    
-    
-        
-    
 
+    return green_counter, red_counter

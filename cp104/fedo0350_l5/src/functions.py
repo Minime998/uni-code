@@ -8,14 +8,15 @@ Email:   your fedo0350@mylaurier.ca
 __updated__ = "2020-10-22"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
 OVERTIME = 40
 OVERTIME_RATE = 1.5
 TAX_RATE = 3.625
 MIN_YEARS = 5
 MIN_SALARY = 30000
+
 
 def closest(target, v1, v2):
     """
@@ -35,15 +36,16 @@ def closest(target, v1, v2):
     """
     diff1 = abs(target-v1)
     diff2 = abs(target-v2)
-    
+
     if diff1 > diff2:
         result = v2
     elif diff2 > diff1:
         result = v1
     else:
         result = v1
-    
+
     return result
+
 
 def is_divisible(n, i, j):
     """
@@ -60,13 +62,14 @@ def is_divisible(n, i, j):
             i and j, False otherwise (boolean)
     ------------------------------------------------------
     """
-    
-    if n%i==0 and n%j==0:
+
+    if n % i == 0 and n % j == 0:
         result = True
     else:
         result = False
-    
+
     return result
+
 
 def get_pay(hourly_rate, hours_worked):
     """
@@ -85,11 +88,13 @@ def get_pay(hourly_rate, hours_worked):
     ------------------------------------------------------
     """
     if hours_worked > OVERTIME:
-        net_payment = ((hours_worked-OVERTIME)*(hourly_rate*OVERTIME_RATE)+(OVERTIME*hourly_rate))*(0.01*(100-TAX_RATE))
+        net_payment = ((hours_worked-OVERTIME)*(hourly_rate *
+                       OVERTIME_RATE)+(OVERTIME*hourly_rate))*(0.01*(100-TAX_RATE))
     else:
-        net_payment = (hours_worked*hourly_rate)*(0.01*(100-TAX_RATE)) 
+        net_payment = (hours_worked*hourly_rate)*(0.01*(100-TAX_RATE))
 
     return net_payment
+
 
 def richter(intensity):
     """
@@ -107,7 +112,7 @@ def richter(intensity):
     """
     if intensity < 5:
         result = "Little or no damage"
-    elif 5<= intensity < 5.5:
+    elif 5 <= intensity < 5.5:
         result = "Some damage"
     elif 5.5 <= intensity < 6.5:
         result = "Serious damage: walls may crack or fall"
@@ -115,8 +120,9 @@ def richter(intensity):
         result = "Disaster: buildings may collapse"
     else:
         result = "Catastrophe: most buildings destroyed"
-    
+
     return result
+
 
 def loan():
     """
@@ -136,5 +142,5 @@ def loan():
     if int(input("Years employed: ")) >= MIN_YEARS:
         if float(input("Annual salary: ")) >= MIN_SALARY:
             qualified = True
-    
+
     return qualified

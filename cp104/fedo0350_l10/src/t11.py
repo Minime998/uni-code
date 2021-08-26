@@ -9,7 +9,7 @@ __updated__ = "2020-04-20"
 '''
 from functions import find_longest
 
-fh = open("words.txt","r")
+fh = open("words.txt", "r")
 
 word = find_longest(fh)
 

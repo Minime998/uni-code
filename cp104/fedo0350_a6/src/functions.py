@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-15"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
+
 
 def read_positive():
     """
@@ -32,7 +33,8 @@ def read_positive():
         num = int(input("Enter a positive number: "))
     return entlist
 
-def find_target(entlist,target):
+
+def find_target(entlist, target):
     """
     -------------------------------------------------------
     Returns the name of a digit given its number.
@@ -48,8 +50,9 @@ def find_target(entlist,target):
         result = [i for i, x in enumerate(entlist) if x == target]
     except:
         result = []
-        
+
     return result
+
 
 def largest_odd(entlist):
     """
@@ -71,6 +74,7 @@ def largest_odd(entlist):
             lar_odd = item
     return lar_odd
 
+
 def reverse_list(entlist):
     """
     -------------------------------------------------------
@@ -89,12 +93,5 @@ def reverse_list(entlist):
         item = entlist[index]
         rev_list.append(item)
     print("List reversed: {}".format(rev_list))
-    
-    return 
-        
-            
-    
-    
-    
-    
 
+    return

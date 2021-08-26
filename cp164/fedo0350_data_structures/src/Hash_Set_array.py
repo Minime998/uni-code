@@ -250,4 +250,3 @@ class Hash_Set:
         for slot in self._table:
             for item in slot:
                 yield item
-

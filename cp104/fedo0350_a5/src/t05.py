@@ -10,7 +10,7 @@ __updated__ = "2020-04-20"
 from functions import winner
 
 green_counter, red_counter = winner()
- 
+
 if green_counter == red_counter:
     win = "tie"
 elif green_counter > red_counter:
@@ -20,5 +20,4 @@ else:
 
 print("""Number of red entered: {}
 number of green entered: {}
-{}""".format(red_counter,green_counter,win))
-
+{}""".format(red_counter, green_counter, win))

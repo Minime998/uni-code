@@ -11,7 +11,7 @@ from functions import customer_by_id
 
 id_number = input("enter an ID: ")
 
-fh =open("customers.txt", 'r')
+fh = open("customers.txt", 'r')
 result = customer_by_id(fh, id_number)
 print(result)
 fh.close()

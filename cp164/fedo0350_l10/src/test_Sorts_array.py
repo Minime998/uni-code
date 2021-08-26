@@ -38,7 +38,7 @@ def create_sorted():
     """
     -------------------------------------------------------
     Creates a sorted list of SIZE Number objects with values
-	from 0 up to SIZE-1.
+        from 0 up to SIZE-1.
     Use: values = create_sorted()
     -------------------------------------------------------
     Returns:
@@ -57,7 +57,7 @@ def create_reversed():
     """
     -------------------------------------------------------
     Create a reversed list of SIZE Number objects with values
-	from SIZE-1 down to 0.
+        from SIZE-1 down to 0.
     Use: values = create_reversed()
     -------------------------------------------------------
     Returns:
@@ -65,7 +65,7 @@ def create_reversed():
     -------------------------------------------------------
     """
     values = []
-    
+
     for i in range(SIZE - 1, -1, -1):
         values.append(Number(i))
 
@@ -113,7 +113,7 @@ def test_sort(title, func):
     sorted_list = create_sorted()
     rev_list = create_reversed()
     random_list = create_randoms()
-    
+
     func(sorted_list)
     sorted_compare = Number.comparisons
     sorted_swaps = Sorts.swaps
@@ -133,4 +133,3 @@ def test_sort(title, func):
     print(title, "comparisons:", sorted_compare, rev_compare, rand_compare,)
     print(title, "swaps:", sorted_swaps, rev_swaps, rand_swaps,)
     return
-

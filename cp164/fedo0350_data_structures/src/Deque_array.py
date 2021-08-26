@@ -79,7 +79,7 @@ class Deque:
         """
         assert self._is_valid_index(l) and self._is_valid_index(
             r), "indices to swap must be valid"
-        
+
         self._values[r], self._values[l] = self._values[l], self._values[r]
 
         return
@@ -140,7 +140,7 @@ class Deque:
 
         value = deepcopy(self._values[0])
 
-        return value 
+        return value
 
     def peek_rear(self):
         """
@@ -204,4 +204,3 @@ class Deque:
         """
         for value in self._values:
             yield value
-

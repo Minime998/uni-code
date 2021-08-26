@@ -74,7 +74,7 @@ class List:
         -------------------------------------------------------
         """
         n = self._count
-        
+
         return n
 
     def prepend(self, value):
@@ -93,7 +93,7 @@ class List:
         self._count += 1
         if self._count == 1:
             self._rear = self._front
-        
+
         return
 
     def append(self, value):
@@ -169,7 +169,7 @@ class List:
 
             if i == 0:
                 self.prepend(value)
-                
+
         return
 
     def _linear_search(self, key):
@@ -221,7 +221,7 @@ class List:
                 self._front = current._next
             else:
                 previous._next = current._next
-    
+
             if current._next is None:
                 self._rear = previous
             self._count -= 1
@@ -283,7 +283,7 @@ class List:
             self._count = 0
             self._rear = None
             self._front = None
-                
+
         return
 
     def find(self, key):
@@ -380,7 +380,7 @@ class List:
                 current = current._next
                 counter += 1
             value = deepcopy(current._value)
-        
+
         return value
 
     def __setitem__(self, i, value):
@@ -411,7 +411,7 @@ class List:
                 current = current._next
                 counter += 1
             current._value = deepcopy(value)
-        
+
         return value
 
     def __contains__(self, key):
@@ -559,7 +559,7 @@ class List:
         current = self._front
         previous = None
         holder = []
-        
+
         while current is not None:
             if current._value not in holder:
                 holder.append(current._value)
@@ -567,7 +567,7 @@ class List:
             else:
                 previous._next = current._next
                 self._count -= 1
-            current = current._next    
+            current = current._next
         return
 
     def pop(self, *args):
@@ -727,8 +727,9 @@ class List:
         elif identical is not True or identical is not False:
             source_node = self._front
             target_node = target._front
-    
-            identical = self.is_identical_r_aux(source_node, target_node, target)
+
+            identical = self.is_identical_r_aux(
+                source_node, target_node, target)
         return identical
 
     def is_identical_r_aux(self, source_node, target_node, target):
@@ -740,7 +741,7 @@ class List:
                 self.is_identical_r_aux(source_node, target_node, target)
             else:
                 identical = False
-                
+
         return identical
 
     def split(self):
@@ -757,9 +758,9 @@ class List:
         """
         target1 = List()
         target2 = List()
-        
+
         if self._front is not None:
-            
+
             current = self._front
             previous = None
             new_node = _List_Node(current._value, None)
@@ -770,9 +771,9 @@ class List:
             current = current._next
             previous._next = None
             self._count -= 1
-            
+
             middle = self._count // 2 - 1
-            
+
             if self._count > 0:
                 index = 0
                 while index <= middle:
@@ -784,7 +785,7 @@ class List:
                     self._count -= 1
                     index += 1
                     target1._count += 1
-            
+
                 if self._front is not None:
                     new_node2 = _List_Node(current._value, None)
                     target2._front = new_node2
@@ -851,7 +852,7 @@ class List:
         target2 = List()
         left = True
         self.split_alt_r_aux(target1, target2, left)
-        return  target1, target2
+        return target1, target2
 
     def split_alt_r_aux(self, target1, target2, left):
         if self._front is not None:
@@ -861,7 +862,7 @@ class List:
                 target2._move_front_to_rear(self)
             left = not left
             self.split_alt_r_aux(target1, target2, left)
-        return 
+        return
 
     def _linear_search_r(self, key):
         """
@@ -879,21 +880,22 @@ class List:
             index - index of the node containing key, -1 if key not found (int)
         -------------------------------------------------------
         """
-        index = 0 
-        previous = None 
-        current = self._front 
-        
+        index = 0
+        previous = None
+        current = self._front
+
         if self._front is None:
-            previous = None 
-            current = None 
-            index = -1 
+            previous = None
+            current = None
+            index = -1
         else:
-            previous, current, index = self._linear_search_r_aux(current, previous, key, index)
-        
+            previous, current, index = self._linear_search_r_aux(
+                current, previous, key, index)
+
         if previous is None and index != 0:
-            previous = self._rear 
+            previous = self._rear
         return previous, current, index
-    
+
     def _linear_search_r_aux(self, current, previous, key, index):
         """
         ----------------------------------------------------------
@@ -902,18 +904,19 @@ class List:
         """
         if current._value != key:
             if current._next is not None:
-                previous = current 
-                index += 1 
-                previous, current, index = self._linear_search_r_aux(current._next, previous, key, index)
-        
+                previous = current
+                index += 1
+                previous, current, index = self._linear_search_r_aux(
+                    current._next, previous, key, index)
+
             else:
-                previous = None 
-                current = None 
-                index = -1 
+                previous = None
+                current = None
+                index = -1
         if previous is None and index != 0:
-            
-            previous = self._rear 
-            
+
+            previous = self._rear
+
         return previous, current, index
 
     def intersection(self, source1, source2):
@@ -965,7 +968,7 @@ class List:
         """
         source1_node = source1._front
         self._intersection_r_aux(source1_node, source2)
-        
+
         return
 
     def _intersection_r_aux(self, source1_node, source2):
@@ -1044,7 +1047,7 @@ class List:
         return
 
     def _union_r_aux(self, s1node, s2node):
-        
+
         if s1node is not None:
             value = s1node._value
             _, _, index = self._linear_search(value)
@@ -1220,7 +1223,7 @@ class List:
         self._rear = node
         self._count += 1
         return
-    
+
     def _move_front_to_front(self, source):
         """
         -------------------------------------------------------
@@ -1275,7 +1278,7 @@ class List:
         -------------------------------------------------------
         """
         move_node = None
-        
+
         if source1._front is None and source2._front is not None:
             new_node = _List_Node(source2._front._value, None)
             if self._rear is None:
@@ -1311,7 +1314,7 @@ class List:
             self._count += 1
             source1._count -= 1
             source1._front = source1._front._next
-            
+
             new_node = _List_Node(source2._front._value, None)
             if self._rear is None:
                 self._rear = new_node
@@ -1324,10 +1327,10 @@ class List:
             source2._front = source2._front._next
 
         if move_node is None:
-            
+
             source1_node = source1._front
             source2_node = source2._front
-            
+
             while source1_node is not None:
                 self._rear._next = source1_node
                 self._rear = source1_node
@@ -1351,7 +1354,7 @@ class List:
         else:
             current = move_node._front
             previous = None
-            
+
             while current is not None:
                 self._rear._next = current
                 self._rear = current
@@ -1360,7 +1363,7 @@ class List:
                 previous._next = None
                 move_node._count -= 1
                 self._count += 1
-            
+
             move_node._front = None
             move_node._rear = None
         return

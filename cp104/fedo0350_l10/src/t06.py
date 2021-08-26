@@ -9,12 +9,12 @@ __updated__ = "2020-04-20"
 '''
 from functions import number_stats
 
-fh = open("numbers.txt","r")
+fh = open("numbers.txt", "r")
 
 smallest, largest, total, average = number_stats(fh)
 
 print("""Smallest: {} 
 Largest: {} 
 Total: {:.2f}
-Average: {:.2f}""".format(smallest,largest,total,average))
+Average: {:.2f}""".format(smallest, largest, total, average))
 fh.close()

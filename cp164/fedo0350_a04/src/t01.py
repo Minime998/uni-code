@@ -19,4 +19,3 @@ v = target.remove()
 print(target._values)
 v = target.is_empty()
 print(v)
-

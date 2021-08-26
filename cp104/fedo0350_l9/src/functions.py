@@ -8,9 +8,10 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-19"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
+
 
 def parse_code(product_code):
     """
@@ -32,8 +33,9 @@ def parse_code(product_code):
     pc = product_code[0:3]
     pi = product_code[3:7]
     pq = product_code[7:10]
-    
+
     return pc, pi, pq
+
 
 def validate_code(product_code):
     """
@@ -57,7 +59,7 @@ def validate_code(product_code):
     pi = product_code[3:7]
     pq = product_code[7:8]
     end = product_code[7:]
-    
+
     if pc.isalpha() and pc.isupper() and len(pc) == 3:
         print("Category {} is valid.".format(pc))
     else:
@@ -66,12 +68,13 @@ def validate_code(product_code):
         print("ID {} is valid.".format(pi))
     else:
         print("ID {} is not valid.".format(pi))
-    if len(pq)==1 and pq.isupper():
+    if len(pq) == 1 and pq.isupper():
         print("Qualifier {} is valid.".format(end))
     else:
         print("Qualifier {} is not valid.".format(end))
-    
+
     return
+
 
 def digit_count(s):
     """
@@ -92,6 +95,7 @@ def digit_count(s):
             count += 1
     return count
 
+
 def total_digits(s):
     """
     -------------------------------------------------------
@@ -110,6 +114,7 @@ def total_digits(s):
         if s[i].isdigit():
             total += int(s[i])
     return total
+
 
 def calculate(expr):
     """
@@ -148,20 +153,5 @@ def calculate(expr):
             result = None
         else:
             result += int(first) / int(last)
-    
+
     return result
-        
-    
-
-    
-    
-            
-    
-        
-        
-        
-    
-        
-    
-
-

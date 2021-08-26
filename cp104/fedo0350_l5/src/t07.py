@@ -15,4 +15,4 @@ hours_worked = float(input("Hours worked: "))
 
 net_payment = get_pay(hourly_rate, hours_worked)
 
-print("Net payment for employee {}: ${:.2f}".format(emp_id,net_payment))
+print("Net payment for employee {}: ${:.2f}".format(emp_id, net_payment))

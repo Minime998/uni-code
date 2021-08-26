@@ -7,12 +7,12 @@ Email: fedo0350@mylaurier.ca
 __updated__ = "2020-10-01"
 
 '''
-#assignments
+# assignments
 location1 = "left"
 location2 = "middle"
 location3 = "right"
 
-#outputs
+# outputs
 print("""{:-<20s}
 {:-^20s}
-{:->20s}""".format(location1,location2,location3))
+{:->20s}""".format(location1, location2, location3))

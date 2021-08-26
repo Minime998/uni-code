@@ -8,11 +8,12 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-12-04"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
 
-def add_2d_list(matrix1,matrix2):
+
+def add_2d_list(matrix1, matrix2):
     """
     -------------------------------------------------------
     Extracts and calculates the total of all digits in s.
@@ -26,9 +27,10 @@ def add_2d_list(matrix1,matrix2):
     """
     matrix1 = [[]]
     matrix2 = [[]]
-    added_matrix = [[1,2,3]]
-    
+    added_matrix = [[1, 2, 3]]
+
     return added_matrix
+
 
 def largest_even(matrix):
     """
@@ -45,6 +47,8 @@ def largest_even(matrix):
     matrix = [[]]
     large_even = 1
     return large_even
+
+
 def flatten_2d(matrix):
     """
     -------------------------------------------------------
@@ -59,4 +63,3 @@ def flatten_2d(matrix):
     """
     flatten = sum(matrix, [])
     return flatten
-    

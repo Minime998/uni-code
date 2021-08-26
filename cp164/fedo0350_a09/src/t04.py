@@ -13,5 +13,5 @@ bst = BST()
 
 bst.insert(12)
 
-b = 12 in bst 
+b = 12 in bst
 print(b)

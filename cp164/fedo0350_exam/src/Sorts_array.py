@@ -38,7 +38,7 @@ class Sorts:
         for x in temp_num_list:
             strings.append(x)
         print(strings)
-        
+
         length = len(strings)
         max_element = max(strings)
         digits = len(str(max_element))

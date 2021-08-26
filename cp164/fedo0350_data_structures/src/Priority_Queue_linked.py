@@ -70,7 +70,7 @@ class Priority_Queue:
             the number of values in the priority queue.
         -------------------------------------------------------
         """
-        return self._count 
+        return self._count
 
     def insert(self, value):
         """
@@ -91,18 +91,18 @@ class Priority_Queue:
             previous = current
             current = current._next
         int_node = _PQ_Node(value, current)
-        
+
         if self._front is None:
             self._front = int_node
             self._rear = int_node
-            
+
         elif previous is None:
             self._front = int_node
-            
+
         elif previous is self._rear:
             self._rear._next = int_node
             self._rear = int_node
-            
+
         else:
             previous._next = int_node
         self._count += 1
@@ -192,16 +192,16 @@ class Priority_Queue:
             previous = current
             current = current._next
             count += 1
-            
+
         if current is not None:
             target2._front = current
             target2._rear = self._rear
-            
+
         if previous is not None:
             target1._front = self._front
             target1._rear = previous
             previous._next = None
-            
+
         target2._count = self._count - count
         target1._count = count
         self._count = 0
@@ -275,7 +275,7 @@ class Priority_Queue:
         temp = source._front
         source._count -= 1
         source._front = source._front._next
-        
+
         if source._front is None:
             source._rear = None
         if self._front is None:

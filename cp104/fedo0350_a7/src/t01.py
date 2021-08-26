@@ -9,7 +9,8 @@ __updated__ = "2020-04-20"
 '''
 from functions import driver_license
 
-right_list = ["A","C","A","A","D","B","C","A","C","B","A","D","C","A","D","C","B","B","D","A"]
+right_list = ["A", "C", "A", "A", "D", "B", "C", "A", "C",
+              "B", "A", "D", "C", "A", "D", "C", "B", "B", "D", "A"]
 answers = input("""Enter a sequence of 20 choices seperated by a space, each A-D in 
 Uppercase: """)
 student_list = answers.split()

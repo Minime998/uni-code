@@ -13,4 +13,4 @@ num = int(input("Enter a number: "))
 
 total = sum_even(num)
 
-print("The sum of all even numbers from 2 to {} is : {}".format(num,total))
+print("The sum of all even numbers from 2 to {} is : {}".format(num, total))

@@ -58,26 +58,26 @@ class Set:
         """
         new_node = _Set_Node(deepcopy(value), None)
         current = self._front
-        
+
         if current is None:
             self._front = new_node
             inserted = True
             self._count += 1
-        
-        else: 
+
+        else:
             while current._next is not None and current._value != value:
                 current = current._next
-            
+
             if current._next is None:
                 current._next = new_node
-                inserted = True 
+                inserted = True
                 self._count += 1
-                
+
             else:
                 inserted = False
 
         return inserted
-    
+
     def remove(self, key):
         """
         finds, removes, and returns the value from source
@@ -93,7 +93,7 @@ class Set:
             else:
                 previous._next = current._next
         return value
-    
+
     def remove_front(self):
         """
         remove from the front
@@ -103,7 +103,7 @@ class Set:
             self._front = self._front._next
             self._count -= 1
         return value
-    
+
     def find(self, key):
         """
         find and return copy of key
@@ -112,14 +112,14 @@ class Set:
         _, current = self._linear_search(key)
         if current is not None:
             value = current._value
-            
+
         return value
-    
+
     def __contains__(self, key):
         _, current = self._linear_search(key)
-        
+
         return current is not None
-    
+
     def max(self):
         start_value = self._front._value
         current = self._front._next
@@ -137,7 +137,7 @@ class Set:
                 start_value = current._value
             current = current._next
         return start_value
-    
+
     def split_th(self):
         target1 = Set()
         target2 = Set()
@@ -164,7 +164,7 @@ class Set:
                     count += 1
 
         return target1, target2
-    
+
     def __iter__(self):
         """
         testing

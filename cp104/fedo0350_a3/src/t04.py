@@ -11,6 +11,7 @@ from functions import convert_sec
 
 num_sec = int(input("Enter number of seconds: "))
 
-days,hours,minutes,seconds = convert_sec(num_sec)
+days, hours, minutes, seconds = convert_sec(num_sec)
 
-print("There are {} days, {} hours, {} minutes, and {} seconds in {} seconds.".format(days,hours,minutes,seconds,num_sec))
+print("There are {} days, {} hours, {} minutes, and {} seconds in {} seconds.".format(
+    days, hours, minutes, seconds, num_sec))

@@ -13,4 +13,4 @@ v = int(input("Value to input: "))
 
 index = linear_search(a, v)
 
-print("Index of {}: {}".format(v,index))
+print("Index of {}: {}".format(v, index))

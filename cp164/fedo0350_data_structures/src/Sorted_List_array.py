@@ -90,7 +90,7 @@ class Sorted_List:
                 the list, -1 if key is not found. (int)
         -------------------------------------------------------
         """
-                # Index of beginning of subarray to search.
+        # Index of beginning of subarray to search.
         low = 0
         # Index of end of subarray to search.
         high = len(self._values) - 1
@@ -144,7 +144,7 @@ class Sorted_List:
         -------------------------------------------------------
         """
         count = 0
-        
+
         for num in self._values:
             if num in self._values[count + 1:]:
                 for value in self._values[count + 1:]:
@@ -221,7 +221,7 @@ class Sorted_List:
             value - a copy of the full value matching key, otherwise None (?)
         -------------------------------------------------------
         """
-        
+
         i = self._binary_search(key)
         if i != -1:
             value = deepcopy(self._values[i])
@@ -327,7 +327,7 @@ class Sorted_List:
         """
         identical = False
         if self._values == target._values:
-            identical = True 
+            identical = True
 
         return identical
 
@@ -509,7 +509,7 @@ class Sorted_List:
             while len(self._values) != 0 and count % 2 != 0:
                 target2._values.append(self._values.pop(0))
                 count += 1
-        
+
         return target1, target2
 
     def split_apply(self, func):
@@ -598,4 +598,3 @@ class Sorted_List:
         """
         for value in self._values:
             yield value
-

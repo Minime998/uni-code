@@ -432,7 +432,7 @@ class Sorts:
             previous._next = tail
         return head
 
-		# Sort Utilities
+        # Sort Utilities
 
     @staticmethod
     def to_array(a):
@@ -481,7 +481,7 @@ class Sorts:
             else:
                 is_sorted = False
         return is_sorted
-    
+
     @staticmethod
     def radix_sort(a):
         """
@@ -497,4 +497,3 @@ class Sorts:
         """
 
         return
-        

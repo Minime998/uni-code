@@ -8,12 +8,13 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-05"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 
-#[constants]
+# [constants]
 TAX_RATE = 3.625
 OVERTIME = 40
 OVERTIME_RATE = 1.5
+
 
 def power_of_two(target):
     """
@@ -36,6 +37,7 @@ def power_of_two(target):
     power = check_one
     return power
 
+
 def sum_squares(target):
     """
     -------------------------------------------------------
@@ -57,6 +59,7 @@ def sum_squares(target):
     final = check_one
     return final
 
+
 def num_categories():
     """
     -------------------------------------------------------
@@ -77,13 +80,14 @@ def num_categories():
     positives = 0
     while num != -999:
         if num < 0:
-            negatives +=1
+            negatives += 1
         elif num == 0:
-            zeros +=1
+            zeros += 1
         else:
-            positives +=1
+            positives += 1
         num = int(input("Next value (-999 to quit): "))
     return negatives, zeros, positives
+
 
 def budget(available):
     """
@@ -118,6 +122,7 @@ def budget(available):
         status = "Deficit"
     return expenses, balance, status
 
+
 def employee_payroll():
     """
     -------------------------------------------------------
@@ -143,22 +148,13 @@ def employee_payroll():
         hours_worked = int(input("Hours worked: "))
         num_emps += 1
         if hours_worked > OVERTIME:
-            net_pay = ((hours_worked-OVERTIME)*(hour_wage_rate*OVERTIME_RATE)+(OVERTIME*hour_wage_rate))*(0.01*(100-TAX_RATE))
-            print("Net payment for employee {}: ${:,.2f}".format(emp_id,net_pay))
+            net_pay = ((hours_worked-OVERTIME)*(hour_wage_rate*OVERTIME_RATE) +
+                       (OVERTIME*hour_wage_rate))*(0.01*(100-TAX_RATE))
+            print("Net payment for employee {}: ${:,.2f}".format(emp_id, net_pay))
         else:
             net_pay = (hours_worked*hour_wage_rate)*(0.01*(100-TAX_RATE))
-            print("Net payment for employee {}: ${:,.2f}".format(emp_id,net_pay))
+            print("Net payment for employee {}: ${:,.2f}".format(emp_id, net_pay))
         total += net_pay
         emp_id = int(input("Enter next employee ID: "))
     average = total/num_emps
-    return total,average
-
-
-        
-        
-
-        
-
-        
-    
-    
+    return total, average

@@ -18,5 +18,3 @@ for x in range(len(str_list)):
 matrix1 = [nums_list[spot:spot+amount] for spot in range(0, 5, amount)]
 
 matrix2 = [nums_list[spot:spot+amount] for spot in range(6, 11, amount)]
-
-

@@ -15,6 +15,7 @@ num_of_quars = int(input("Enter number of quarters: "))
 num_of_loons = int(input("Enter number of loonies: "))
 num_of_toons = int(input("Enter number of toonies: "))
 
-total = total_change(num_of_nics, num_of_dimes, num_of_quars, num_of_loons, num_of_toons)
+total = total_change(num_of_nics, num_of_dimes,
+                     num_of_quars, num_of_loons, num_of_toons)
 
 print("total amount: ${:.2f}".format(total))

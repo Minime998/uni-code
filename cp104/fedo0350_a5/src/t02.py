@@ -11,8 +11,8 @@ from functions import factorial
 
 num = int(input("Enter a positive number: "))
 
-if num >=0:
+if num >= 0:
     fact = factorial(num)
-    print("{}! = {}".format(num,fact))
+    print("{}! = {}".format(num, fact))
 else:
     print("Error: you entered a negative number")

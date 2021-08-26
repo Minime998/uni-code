@@ -8,11 +8,12 @@ Email:   fedo0350@mylaurier.ca
 __updated__ = "2020-11-18"
 -------------------------------------------------------
 """
-#[import statements]
+# [import statements]
 import random
 
-#[constants]
+# [constants]
 GRAVITY = 9.8
+
 
 def falling_distance(falling_time):
     """
@@ -27,10 +28,11 @@ def falling_distance(falling_time):
     -------------------------------------------------------
     """
     distance_fallen = 1/2*(GRAVITY*(falling_time**2))
-    
+
     return distance_fallen
 
-def calorie_calculator(fat_grams,carb_grams):
+
+def calorie_calculator(fat_grams, carb_grams):
     """
     -------------------------------------------------------
     Takes fat grams and carb grams and returns the calorie count
@@ -46,8 +48,9 @@ def calorie_calculator(fat_grams,carb_grams):
     """
     cals_from_fat = fat_grams*9
     cals_from_carbs = carb_grams*4
-    
+
     return cals_from_fat, cals_from_carbs
+
 
 def convert_date(date_int):
     """
@@ -63,11 +66,12 @@ def convert_date(date_int):
        year: the years in date_int (int >= 0)
     -------------------------------------------------------
     """
-    day = (date_int/10000)%100
-    month = (date_int/1000000)%100
-    year = date_int%10000
-    
+    day = (date_int/10000) % 100
+    month = (date_int/1000000) % 100
+    year = date_int % 10000
+
     return int(day), int(month), int(year)
+
 
 def convert_sec(num_sec):
     """
@@ -85,11 +89,12 @@ def convert_sec(num_sec):
     -------------------------------------------------------
     """
     days = num_sec/86400
-    hours = (num_sec%86400)//3600
+    hours = (num_sec % 86400)//3600
     minutes = num_sec//3600
-    seconds = num_sec%60
-    
-    return int(days),int(hours),int(minutes),int(seconds)
+    seconds = num_sec % 60
+
+    return int(days), int(hours), int(minutes), int(seconds)
+
 
 def math_quiz():
     """
@@ -103,18 +108,14 @@ def math_quiz():
        none
     -------------------------------------------------------
     """
-    num1 = random.randint(100,999)
-    num2 = random.randint(100,999)
-    
-    total_num = num1+num2
-    
-    print("""{:>-9}
-    + {}""".format(num1,num2))
-    
-    guess_ans = int(input("Enter answer:"))
-    
-    print("Your answer: {}, it should be: {}".format(guess_ans,total_num))
-    
-    
-    
+    num1 = random.randint(100, 999)
+    num2 = random.randint(100, 999)
 
+    total_num = num1+num2
+
+    print("""{:>-9}
+    + {}""".format(num1, num2))
+
+    guess_ans = int(input("Enter answer:"))
+
+    print("Your answer: {}, it should be: {}".format(guess_ans, total_num))

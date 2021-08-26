@@ -7,14 +7,15 @@ Email: fedo0350@mylaurier.ca
 __updated__ = "2020-09-24"
 
 '''
-#Constants
+# Constants
 Profit = 0.18
 
-#Inputs
+# Inputs
 projected_annual_sales = float(input("Enter projected annual sales:"))
 
-#Calculations
+# Calculations
 projected_profit = projected_annual_sales*Profit
 
-#Output
-print("The projected profit on sales of ${0:,.2f} is ${1:,.2f}.".format(projected_annual_sales,projected_profit))
+# Output
+print("The projected profit on sales of ${0:,.2f} is ${1:,.2f}.".format(
+    projected_annual_sales, projected_profit))

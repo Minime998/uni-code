@@ -29,7 +29,7 @@ def is_leap_year(year):
     leap_year = False
     if year % 4 == 0 and year % 400 == 0:
         leap_year = True
-    
+
     return leap_year
 
 
@@ -87,8 +87,9 @@ def matrixes_multiply(a, b):
         c - the matrix multiple of a and b (2D list of int/float)
     -------------------------------------------------------
     """
-    c = [[sum(x * y for x, y in zip(a_row, b_col)) for b_col in zip(*b)] for a_row in a]
-    
+    c = [[sum(x * y for x, y in zip(a_row, b_col))
+          for b_col in zip(*b)] for a_row in a]
+
     return c
 
 
@@ -128,9 +129,9 @@ def file_analyze(fv):
                     u += 1
                 elif char.islower() is False and char.isupper() is False and type(char) == str:
                     r += 1
-                
+
         line = fv.readline()
-    
+
     return u, l, d, w, r
 
 
@@ -198,4 +199,3 @@ def shift(string, n):
                 if y + n < len(PLAINTEXT):
                     estring += PLAINTEXT[y + n]
     return estring
-

@@ -10,4 +10,3 @@ __updated__ = "2021-02-09"
 from Movie import Movie
 mymov = Movie("Juno", 2007, None, None, None)
 print(mymov)
-

@@ -7,11 +7,11 @@ Email: fedo0350@mylaurier.ca
 __updated__ = "2020-10-02"
 
 '''
-#inputs
+# inputs
 num_n = int(input("Enter a positive two digit number: "))
 
-#calculations
+# calculations
 sum_of_digits = sum(int(digit) for digit in str(num_n))
 
-#outputs
+# outputs
 print("The sum of the two digits is: {}".format(sum_of_digits))

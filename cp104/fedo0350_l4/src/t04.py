@@ -16,4 +16,4 @@ sh, area, vol = square_pyramid(len_of_base, perp_height_of_triangle)
 
 print("""Slant height of square pyramid: {:.2f}
 Area of square pyramid: {:.2f}
-Volume of square pyramid: {:.2f}""".format(sh,area,vol))
+Volume of square pyramid: {:.2f}""".format(sh, area, vol))

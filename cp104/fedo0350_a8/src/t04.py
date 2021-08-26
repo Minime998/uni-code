@@ -9,12 +9,11 @@ __updated__ = "2020-04-20"
 '''
 from functions import valid_sn_file
 
-fh = open("serial_number.txt",'r')
-oh1 = open("output_t04_valid.txt",'w')
-oh2 = open("ouput_t04_invalid.txt",'w')
+fh = open("serial_number.txt", 'r')
+oh1 = open("output_t04_valid.txt", 'w')
+oh2 = open("ouput_t04_invalid.txt", 'w')
 
 valid_sn_file(fh, oh1, oh2)
 fh.close()
 oh1.close()
 oh2.close()
-

@@ -15,4 +15,4 @@ pc, pi, pq = parse_code(product_code)
 
 print("""Category: {}
 ID: {}
-Qualifier: {}""".format(pc,pi,pq))
+Qualifier: {}""".format(pc, pi, pq))

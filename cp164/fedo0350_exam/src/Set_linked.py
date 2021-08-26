@@ -106,19 +106,19 @@ class Set:
         """
         new_node = _Set_Node(deepcopy(value), None)
         current = self._front
-        
+
         if current is None:
             self._front = new_node
             added = True
             self._count += 1
-        else: 
+        else:
             while current._next is not None and current._value != value:
                 current = current._next
-            
+
             if current._next is None:
                 current._next = new_node
-                added = True 
-                self._count += 1   
+                added = True
+                self._count += 1
             else:
                 added = False
 
@@ -183,7 +183,7 @@ class Set:
         _, current = self._linear_search(key)
         if current is not None:
             value = current._value
-            
+
         return value
 
     def __contains__(self, key):
@@ -199,7 +199,7 @@ class Set:
         -------------------------------------------------------
         """
         _, current = self._linear_search(key)
-        
+
         return current is not None
 
     def max(self):
@@ -237,7 +237,7 @@ class Set:
         -------------------------------------------------------
         """
         assert source._front is not None, \
-        "Cannot move the front of an empty Set"
+            "Cannot move the front of an empty Set"
         if source._front is None:
             self._front = source._front
             self._count += 1

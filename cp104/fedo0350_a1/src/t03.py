@@ -10,4 +10,4 @@ __updated__ = "2020-09-26"
 first_name = input("What is first name? ")
 last_name = input("What is last name? ")
 
-print("Welcome {0} {1}".format(first_name,last_name))
+print("Welcome {0} {1}".format(first_name, last_name))

@@ -48,7 +48,7 @@ def stack_split_alt(source):
         while not source.is_empty() and count % 2 != 0:
             target2.push(source.pop())
             count += 1
-        
+
     return target1, target2
 
 
@@ -97,7 +97,7 @@ def postfix(string):
             if string_list[x] == "+":
                 operator = calc_stack.pop()
                 num = int(operator) + int(string_list[x + 1])
-                calc_stack.push(num)  
+                calc_stack.push(num)
             elif string_list[x] == "-":
                 operator = calc_stack.pop()
                 num = int(operator) - int(string_list[x + 1])
@@ -111,7 +111,7 @@ def postfix(string):
                 num = int(operator) / int(string_list[x + 1])
                 calc_stack.push(num)
     answer = float(calc_stack.pop())
-    
+
     return answer
 
 
@@ -142,7 +142,7 @@ def reroute(opstring, values_in):
             order_stack.push(values_in[count])
         if opstring[x] == "X":
             values_out.append(order_stack.pop())
-            
+
     return values_out
 
 
@@ -168,25 +168,25 @@ def is_mirror_stack(string, valid_chars, m):
     stack = Stack()
     n = len(string)
     i = 0
-    
+
     while mirror == MIRRORED.IS_MIRRORED and i < n and string[i] != m:
         if string[i] in valid_chars:
             stack.push(string[i])
             i += 1
         else:
             mirror = MIRRORED.INVALID_CHAR
-        
+
     if mirror == MIRRORED.IS_MIRRORED:
         i += 1
         while mirror == MIRRORED.IS_MIRRORED and i < n and not stack.is_empty():
             c = stack.pop()
-            
+
             if string[i] != c:
                 mirror = MIRRORED.NOT_MIRRORED
             else:
                 i += 1
         if not (stack.is_empty() and i == n):
-            mirror = MIRRORED.TOO_MANY_LEFT 
+            mirror = MIRRORED.TOO_MANY_LEFT
     return mirror
 
 
@@ -220,7 +220,7 @@ def queue_is_identical(source1, source2):
                 identical = False
     else:
         identical = False
-        
+
     return identical
 
 
@@ -412,6 +412,5 @@ Hash     Slot Key
     """
     for x in values:
         print("{} {}{}".format(hash(x), hash(x) % slots, str(x)))
-            
-    return
 
+    return
