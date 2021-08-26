@@ -197,7 +197,7 @@ class List:
             current = current._next
             index += 1
 
-        if(current is None):
+        if current is None:
             index = -1
 
         return previous, current, index
@@ -883,7 +883,7 @@ class List:
         previous = None 
         current = self._front 
         
-        if(self._front is None):
+        if self._front is None:
             previous = None 
             current = None 
             index = -1 
@@ -900,7 +900,7 @@ class List:
         aux_function for linear_search_r 
         ----------------------------------------------------------
         """
-        if(current._value != key):
+        if current._value != key:
             if current._next is not None:
                 previous = current 
                 index += 1 
