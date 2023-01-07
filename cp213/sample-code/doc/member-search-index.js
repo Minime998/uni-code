@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"lesson01","c":"ShorthandAssignmentOperators","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"lesson01","c":"ShorthandAssignmentOperators","l":"print()"},{"p":"lesson01","c":"ShorthandAssignmentOperators","l":"ShorthandAssignmentOperators()","url":"%3Cinit%3E()"}]
